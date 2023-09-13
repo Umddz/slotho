@@ -5,7 +5,7 @@ import './styles/F3.css'
 
 export const metadata = {
   title: 'Slotho',
-  description: 'Pee pee poo poo.',
+  description: 'A discord server listing.',
 }
 
 export default function RootLayout({ children }) {
