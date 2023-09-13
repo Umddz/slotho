@@ -1,6 +1,6 @@
 body  {
     background-color: #F6EADB;
-    font-family: "Sambada";
+    font-family: "Blueberry";
     margin: 0;
 }
 
@@ -16,7 +16,6 @@ body  {
 
 h1 {
     font-size: calc(4vw + 4vh);
-    font-family: "Blueberry";
     text-transform: uppercase;
     letter-spacing: 1vw;
     margin-bottom: 0;
@@ -30,6 +29,7 @@ img {
 
 p {
     margin: 0;
+    font-family: "Sambada";
     padding-left: 10vw;
     padding-right: 10vw;
     text-align: center;
