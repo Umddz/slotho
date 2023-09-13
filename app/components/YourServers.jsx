@@ -18,8 +18,8 @@ export default function YourServers({ setAddServer, dashboard }) {
 
     useEffect(() => {
         readAll('servers').then(res => {
-            const Yservers = res.map(server => server.postedBy.username === dashboard.username && server)
-            Yservers.length !== 0 ? setServers(Yservers) : setServers('No servers!')
+            const Yservers = res.map(server => server.postedBy.username === dashboard.username ? server : null)
+            !Yservers.every(server => server === null) ? setServers(Yservers) : setServers('No servers!')
         }
         )
     }, [])
