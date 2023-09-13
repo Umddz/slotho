@@ -1,0 +1,22 @@
+.end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #B09366;
+    font-family: "Sambada";
+    margin: 0;
+    text-align: center;
+}
+
+.end div  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.end div ul h2:hover {
+    color: white;
+    cursor: pointer;
+}
