@@ -4,7 +4,7 @@ import './styles/F2.css'
 import './styles/F3.css'
 
 export const metadata = {
-  title: 'Slotho',
+  title: 'Discord Servers - Public Server Listing - Slotho',
   description: 'Another Discord Server Listing.',
 }
 
