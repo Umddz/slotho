@@ -22,7 +22,6 @@ export default function Search({ params }) {
 
     return (
         <div className="search">
-            <img src="sloth3.png" alt="Sloth" className="sloth" />
             <h1>Search</h1>
             <div className="params">
                 <h2>Showing results for "{params.search}"</h2>
