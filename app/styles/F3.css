@@ -1,0 +1,54 @@
+.end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #B09366;
+    font-family: "Sambada";
+    margin: 0;
+    text-align: center;
+}
+
+.end div  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.end div ul h2:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.params {
+    background-color: #B09366;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+}
+
+.search .end {
+    margin-top: auto;
+}
+.search h2 {
+    font-family: "Sambada";
+}
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
