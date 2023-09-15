@@ -6,8 +6,10 @@ import './styles/F3.css'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import add from './firebase/add'
+import dynamic from 'next/dynamic'
 import { userContext } from './contexts/userContext'
-import Nav from './components/Nav'
+
+const Nav = dynamic(() => import('./components/Nav'), { ssr: false })
 
 export const metadata = {
   title: 'Slotho',
