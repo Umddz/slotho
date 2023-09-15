@@ -6,6 +6,7 @@ import YourServers from './YourServers'
 import Loader from './Loader'
 import End from './End'
 import { userContext } from '../contexts/userContext'
+import Link from 'next/link'
 
 const AddServer = lazy(() => import('./AddServer'))
 
@@ -17,7 +18,7 @@ export default function Dashboard() {
         <>
             {!addServer ? 
             <div className="dashboard">
-                { userData && userData !== "User not found!" ? (
+                { userData ? (
                     <>
                         <h1 style={{ marginTop: 100 }}>Dashboard</h1>
                         <img src="sloth2.png" className="sloth" />
@@ -26,9 +27,11 @@ export default function Dashboard() {
                         <YourServers setAddServer={() => setAddServer(true)}/>
                         <End />
                     </>
-                ) : (
-                    <h2>Not Logged In!</h2>
-                ) 
+                ) : 
+                <>
+                    <h2>It'll never load, cause you didnt log in!</h2>
+                    <h2>The sloth is gonna be tired of rotating, go back <Link href="/">Home</Link></h2>
+                </>
             }
             </div> : 
             <Suspense fallback={<Loader width="15%"/>}>
