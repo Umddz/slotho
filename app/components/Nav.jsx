@@ -22,12 +22,12 @@ export default function Nav() {
                 <button
                     disabled={userData ? true : false}
                     style={{ marginRight: 30 }}
-                    onClick={() => open('https://discord.com/api/oauth2/authorize?client_id=1147583172821909556&redirect_uri=https%3A%2F%2Fslotho.vercel.app%2F&response_type=token&scope=identify')}
+                    onClick={() => open('https://discord.com/api/oauth2/authorize?client_id=1147583172821909556&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2F&response_type=token&scope=identify')}
                 >
                     { !userData ? "Log In" : "Logged In"}
                 </button>
             </> : 
-            userData && 
+            userData ? 
             <>
                 <img 
                 src={`https://cdn.discordapp.com/avatars/${userData.id}/${userData.avatar}.jpg`} 
@@ -35,7 +35,7 @@ export default function Nav() {
                 style={{ marginLeft: 'auto'}} 
             />
                 <h3 onClick={() => router.push('/dashboard')}>{ userData.global_name }</h3>
-            </>
+            </>: <h3 style={{ marginLeft: 'auto'}} >Not Logged in!</h3>
             }
         </div>
     )
