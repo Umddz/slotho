@@ -15,7 +15,6 @@ export default function Nav() {
             <Logo />
             {width > 750 ?
             <>
-                <h3 onClick={() => open('https://discord.gg/Zwrc9RqxEr')} style={{ marginLeft: 'auto'}}>Discord</h3>
                 <h3 onClick={() => router.push('/')}>Home</h3>
                 <h3 onClick={() => router.push('/servers')}>Servers</h3>
                 <h3 onClick={() => userData ? router.push('/dashboard') : document.querySelector('.nav button').click()}>Add Server</h3>
