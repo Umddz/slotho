@@ -20,7 +20,7 @@ export default function MainHeading() {
             <h3>Server Owner? <button onClick={() => userData ? router.push('/dashboard') : document.querySelector('.nav button').click()}>Add your server</button></h3>
             
             <img src="/sloth.png" alt="Sloth" />
-            <img src="/discord.png" alt="discord" className="discord" />
+            <img src="/discord.svg" alt="discord" className="discord" />
             
             {width < 1000 && userData && <div className="user-con-m">
                 <h2>Go to the <Link href={`/dashboard`}>Dashboard</Link></h2>
