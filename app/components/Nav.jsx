@@ -17,7 +17,7 @@ export default function Nav() {
             <>
                 <h3 onClick={() => router.push('/')} style={{ marginLeft: 'auto'}}>Home</h3>
                 <h3 onClick={() => router.push('/servers')}>Servers</h3>
-                <h3 onClick={() => userData ? router.push('/dashboard') : document.querySelector('.nav button').click()}>Add Server</h3>
+                <h3 onClick={() => userData ? router.push('/dashboard') : document.querySelector('.nav button').click()}>Dashboard</h3>
             </> : 
             userData && 
             <h3 onClick={() => router.push('/dashboard')} style={{ marginLeft: 'auto' }}>{ userData.global_name }</h3>
